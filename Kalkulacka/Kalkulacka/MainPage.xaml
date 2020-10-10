@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kalkulacka.MainPage">
+
+    <Grid BackgroundColor="#24252a">
+ 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="5*"/>
+            
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+
+        <Frame BackgroundColor="#24252a" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="6">
+            <Label x:Name="resultText" Text="0" 
+               FontSize="40" 
+               HorizontalTextAlignment="Right"
+               VerticalTextAlignment="Center"
+               TextColor="white"/>
+        </Frame>
+
+        <Button Clicked="OnClear" Text="C" Grid.Row="2" Grid.Column="1" BackgroundColor="#2b2c31" TextColor="white" FontSize="30"/>
+        <Button Clicked="Odmocnina" Text="√" Grid.Row="2" Grid.Column="2" BackgroundColor="green" TextColor="white" FontSize="30"/>
+        <Button Clicked="Mocnina" Text="x2" Grid.Row="2" Grid.Column="3" BackgroundColor="green" TextColor="white" FontSize="30"/>
+
+        <Button Clicked="OnNumber" Text="9" Grid.Row="3" Grid.Column="3" BackgroundColor="#2b2c31" TextColor="white" FontSize="30"/>
+        <Button Clicked="OnNumber" Text="8" Grid.Row="3" Grid.Column="2" BackgroundColor="#2b2c31" TextColor="white" FontSize="30"/>
+        <Button Clicked="OnNumber" Text="7" Grid.Row="3" Grid.Column="1" BackgroundColor="#2b2c31" TextColor="white" FontSize="30"/>
+        <Button Clicked="OnNumber" Text="6" Grid.Row="4" Grid.Column="3" BackgroundColor="#2b2c31" TextColor="white" FontSize="30"/>
+        <Button Clicked="OnNumber" Text="5" Grid.Row="4" Grid.Column="2" BackgroundColor="#2b2c31" TextColor="white" FontSize="30"/>
+        <Button Clicked="OnNumber" Text="4" Grid.Row="4" Grid.Column="1" BackgroundColor="#2b2c31" TextColor="white" FontSize="30"/>
+        <Button Clicked="OnNumber" Text="3" Grid.Row="5" Grid.Column="3" BackgroundColor="#2b2c31" TextColor="white" FontSize="30"/>
+        <Button Clicked="OnNumber" Text="2" Grid.Row="5" Grid.Column="2" BackgroundColor="#2b2c31" TextColor="white" FontSize="30"/>
+        <Button Clicked="OnNumber" Text="1" Grid.Row="5" Grid.Column="1" BackgroundColor="#2b2c31" TextColor="white" FontSize="30"/>
+
+        <Button Clicked="OnNumber" Text="0" Grid.Row="6" Grid.Column="1" BackgroundColor="#2b2c31" TextColor="white" FontSize="30" Grid.ColumnSpan="2"/>
+        <Button Clicked="OnCalculate" Text="=" Grid.Row="6" Grid.Column="3" BackgroundColor="green" TextColor="white" FontSize="30" Grid.ColumnSpan="2"/>
+
+        <Button Clicked="OnOperator" Text="÷" Grid.Row="2" Grid.Column="4" BackgroundColor="green" TextColor="white" FontSize="30"/>
+        <Button Clicked="OnOperator" Text="*" Grid.Row="3" Grid.Column="4" BackgroundColor="green" TextColor="white" FontSize="30"/>
+        <Button Clicked="OnOperator" Text="-" Grid.Row="4" Grid.Column="4" BackgroundColor="green" TextColor="white" FontSize="30"/>
+        <Button Clicked="OnOperator" Text="+" Grid.Row="5" Grid.Column="4" BackgroundColor="green" TextColor="white" FontSize="30"/>
+    </Grid>
+
+</ContentPage>
